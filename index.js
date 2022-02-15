@@ -68,7 +68,9 @@ run().catch(console.dir)
 app.get('/', (req, res) => {
     res.send('Hitting My Server');
 });
-
+app.get('/new', (req, res) => {
+    res.send('Hitting my new')
+})
 app.listen(port, () => {
     console.log('Running genius car mechanics', port);
 })
